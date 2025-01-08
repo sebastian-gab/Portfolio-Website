@@ -150,3 +150,101 @@
     align-items: center;
     justify-content: center;
   }
+
+  /* ABOUT */
+
+  #about {
+	height: 100vh;
+	display: flex;
+	text-align: center;
+	justify-content: center;
+}
+
+  .about-holder{
+	display: flex;
+	padding: 2rem;
+	height: 80%;
+	width: 70%;
+	background-color: #fff;
+	border-radius: 16px;
+	box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+  }
+
+  .about-info{
+	height: 100%;
+	width: 30%;
+  }
+
+  .about-img{
+	width: 85%;
+	height: 70%;
+	border-radius: 16px;
+  }
+
+  .about-text {
+	text-align: center;
+  }
+
+  .line {
+	background-color: #ddd;
+	width: 0.05rem;
+	border-radius: 16px;
+  }
+
+  .about-cards{
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
+	width: 70% ;
+  }
+  
+  .about-card{
+	transform: rotateX(10deg);
+	position: relative;
+	background-color: #fff;
+	border-radius: 16px;
+	margin-top: 3rem;
+	height: 75%;
+	width: 75%;
+	transition: all 0.3s ease-in-out;
+  }
+
+  .folder-menu{
+	display: flex;
+	text-align: center;
+	justify-content: center;
+	padding-top: 0.3rem;
+	font-weight: 600;
+	top: -25px;
+	border-radius: 16px;
+	position: absolute;
+	height: 70px;
+	width: 7rem;
+	background-color: inherit;
+  }
+
+  .certs {
+	background-color: #ddd;
+	box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+  }
+ 
+  .skills {
+	background-color: #eee;
+  }
+
+  .skills:hover{
+	top: 10px;
+	transition: all 0.2s ease-in-out;
+  }
+
+  .about-folder-1{
+	z-index: 100;
+  }
+
+  .about-folder-2{
+	top: 20px;
+	position: absolute;
+	z-index: 10;
+  }
