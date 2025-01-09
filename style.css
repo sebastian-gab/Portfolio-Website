@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+
 * {
     margin: 0;
     padding: 0;
@@ -14,7 +17,7 @@
   }
 
   body {
-    font-family:sans-serif;
+    font-family: Montserrat, sans-serif;
     background: var(--main-bg-color);
   }
 
@@ -26,6 +29,8 @@
 
  /* HEADER  */
 #header {
+	z-index: 200;
+	position:relative;
     position: fixed;
     width: 100%;
     font-weight: 600;
@@ -134,13 +139,40 @@
 }
 
 
-.menu-list{
+.header-menu{
+	background-color: #fff;
+	position: absolute;
+	display: grid;
+	opacity: 75%;
+	right: 13.5rem;
+	top: 2.5rem;
+	padding: 5px;
+	width: 200px;
+	border-radius: 16px;
+	box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
 }
 
 .menu-item{
-    margin-left: 2rem;
+	padding: 10px 5px;
+	display: flex;
+	align-items: center;
 }
 
+
+.menu-item:hover {
+	background-color: #eee;
+	border-radius: 14px;
+}
+
+.menu-item:hover:active{
+	transform: scale(.98);
+	transition: all 0.2s ease-in-out;
+}
+
+.menu-item img {
+	width: 25px;
+	margin: 0 10px;
+}
 
 
   /* MAIN */
@@ -201,6 +233,7 @@
   }
   
   .about-card{
+	cursor: pointer;
 	transform: rotateX(10deg);
 	position: relative;
 	background-color: #fff;
@@ -229,18 +262,30 @@
 	background-color: #ddd;
 	box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
   }
+
+  .certificate-img{
+	width: 20%;
+	margin: auto;
+  }
  
   .skills {
 	background-color: #eee;
   }
 
+  .skill-img{
+	width: 25%;
+	height: 45%;
+  }
+
   .skills:hover{
-	top: 10px;
+	top: 0px;
 	transition: all 0.2s ease-in-out;
   }
 
   .about-folder-1{
 	z-index: 100;
+	display: grid;
+	align-items: center;
   }
 
   .about-folder-2{
